@@ -1,11 +1,4 @@
-@font-face {
-  font-family: "satoshi_variablebold";
-  src:
-    url("satoshi-variable-webfont.woff2") format("woff2"),
-    url("satoshi-variable-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -19,7 +12,7 @@ body {
 }
 
 :root {
-  --body-font: "satoshi_variablebold", sans-serif;
+  --body-font: "Inter Tight", sans-serif;
 
   --primary-900: #ffffff;
   --primary-700: #f7f7f7;
