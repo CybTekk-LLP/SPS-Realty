@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "satoshi_variablebold";
+  src:
+    url("satoshi-variable-webfont.woff2") format("woff2"),
+    url("satoshi-variable-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+:root {
+  --body-font: "satoshi_variablebold", sans-serif;
+
+  --primary-900: #ffffff;
+  --primary-700: #f7f7f7;
+
+  --secondary-900: #000000;
+  --secondary-700: #222222;
+  --secondary-500: #656565;
+
+  --tertiary-900: #e31e24;
+}
