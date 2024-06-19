@@ -1,1 +1,5 @@
-<h1>welcome to cybtekk</h1>
+<script lang="ts">
+  import { ModelConfigurator } from "$lib/project";
+</script>
+
+<ModelConfigurator></ModelConfigurator>
