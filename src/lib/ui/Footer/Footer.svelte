@@ -16,26 +16,30 @@
   <div class="icons">
     <img src="/images/Logo/LogoWhite.svg" alt="logo" />
     <div class="spacer" aria-hidden="true"></div>
-    <Typography type="subtext">{l10n.subscribeLabel}</Typography>
+    <Typography type="body" _color="var(--primary-900)"
+      >{l10n.subscribeLabel}</Typography
+    >
     <div class="spacer" aria-hidden="true"></div>
-    <Input
-      args={{
-        variant: "text",
-      }}
-      l10n={{
-        label: "Email Address",
-        placeholder: "l.sehotra@cybtekk.com",
-        errorLabel: "invalid email",
-      }}
-      handlers={{
-        // @ts-ignore
-        validate: (value) => {
-          return value.match(
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-          );
-        },
-      }}
-    />
+    <div class="input">
+      <Input
+        args={{
+          variant: "text",
+        }}
+        l10n={{
+          label: l10n.subscribeLabel,
+          placeholder: "l.sehotra@cybtekk.com",
+          errorLabel: "invalid email",
+        }}
+        handlers={{
+          // @ts-ignore
+          validate: (value) => {
+            return value.match(
+              /^(([^<>()[\]\\.,;:\s@"]+(\.[^<div>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+          },
+        }}
+      />
+    </div>
     <div class="spacer" aria-hidden="true"></div>
     <div class="btn">
       <Button
@@ -130,6 +134,12 @@
       & > .socials {
         display: flex;
         gap: 20px;
+      }
+      & > .input {
+        inline-size: 200px;
+        :global(label) {
+          display: none;
+        }
       }
     }
     & > .offices {
