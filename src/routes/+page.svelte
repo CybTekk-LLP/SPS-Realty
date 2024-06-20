@@ -148,6 +148,7 @@
         <Typography type="heading" _color="var(--secondary-900)"
           >Our Latest Projects</Typography
         >
+        <br />
         <img src="/images/Home/HeliosLogo.svg" alt="logo" />
       </div>
       <Carousel

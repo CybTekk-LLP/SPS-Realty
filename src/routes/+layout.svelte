@@ -7,19 +7,19 @@
   <Navbar
     content={{
       navOptions: [
-        { name: "Home", href: "/", target: "_blank" },
+        { name: "Home", href: "/", target: "" },
         {
           name: "Projects",
-          href: "",
-          target: "_blank",
+          href: "/projects",
+          target: "",
         },
         {
           name: "Investors",
           href: "",
-          target: "_blank",
+          target: "",
         },
-        { name: "About us", href: "#about", target: "_blank" },
-        { name: "Careers", href: "", target: "_blank" },
+        { name: "About us", href: "#about", target: "" },
+        { name: "Careers", href: "", target: "" },
       ],
     }}
     handlers={{ handleContact: () => goto("#contact") }}
