@@ -25,6 +25,7 @@
         >
       </p>
       <br />
+      <br />
       <div class="btn">
         <Button
           args={{ variant: "primary" }}
@@ -33,8 +34,9 @@
         />
       </div>
       <br />
+      <br />
       <VideoPlayer
-        poster="/images/Home/GalleryImageOne.png"
+        poster="/images/Home/Poster.png"
         source={["/images/Home/Helios.mp4"]}
       />
     </div>
