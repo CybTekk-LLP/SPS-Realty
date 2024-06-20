@@ -27,7 +27,7 @@
     font-family: var(--body-font);
     word-break: break-word;
     leading-trim: both;
-    color: var(--primary-active);
+    color: var(--primary-900);
 
     &.block {
       display: block;
@@ -41,7 +41,7 @@
       font-weight: 700;
     }
     &.caption {
-      font-size: 2rem;
+      font-size: clamp(1.5rem, 1.3333rem + 0.8333vw, 2rem);
       font-weight: 700;
     }
 
