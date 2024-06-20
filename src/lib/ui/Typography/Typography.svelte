@@ -27,7 +27,7 @@
     font-family: var(--body-font);
     word-break: break-word;
     leading-trim: both;
-    color: var(--primary-active);
+    color: var(--primary-900);
 
     &.block {
       display: block;
