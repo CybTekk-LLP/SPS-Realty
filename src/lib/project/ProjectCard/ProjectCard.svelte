@@ -26,6 +26,7 @@
     .card{
         display: block;
         inline-size: 100%;
+        cursor: pointer;
         &> img{
             inline-size: 100%;
             block-size: 700px;
