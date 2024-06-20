@@ -114,7 +114,7 @@
     grid-template-columns: repeat(4, auto);
     background-color: var(--secondary-700);
     gap: 20px;
-    padding-inline: 20px;
+    padding-inline: 64px;
     padding-block: 40px;
     @media screen and (width <= 768px) {
       grid-template-columns: auto;
