@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
   import { VideoPlayer } from "$lib/project";
   import { TextCard, Carousel } from "$lib/project";
   import { Typography, Button, Input } from "$lib/ui";
@@ -30,7 +31,7 @@
         <Button
           args={{ variant: "primary" }}
           l10n={{ buttonLabel: "Contact us" }}
-          handlers={{ click: () => null }}
+          handlers={{ click: () => goto("#contact") }}
         />
       </div>
       <br />
@@ -41,7 +42,7 @@
       />
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h1>
         <Typography type="heading" _color="var(--secondary-900)"
@@ -160,7 +161,7 @@
       />
     </div>
   </section>
-  <section class="form">
+  <section class="form" id="contact">
     <div class="container">
       <form>
         <Typography type="heading" _color="var(--secondary-900)"

@@ -33,7 +33,7 @@
     <Button
       args={{ variant: "secondary " }}
       l10n={{ buttonLabel: "Contact us" }}
-      handlers={{ click: () => alert("asdf") }}
+      handlers={{ click: handlers.handleContact }}
     />
   </div>
   <!-- svelte-ignore a11y-click-events-have-key-events -->

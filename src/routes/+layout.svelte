@@ -10,19 +10,19 @@
         { name: "Home", href: "/", target: "_blank" },
         {
           name: "Projects",
-          href: "/projects",
+          href: "",
           target: "_blank",
         },
         {
           name: "Investors",
-          href: "/investors",
+          href: "",
           target: "_blank",
         },
-        { name: "About us", href: "/about", target: "_blank" },
-        { name: "Careers", href: "/careers", target: "_blank" },
+        { name: "About us", href: "#about", target: "_blank" },
+        { name: "Careers", href: "", target: "_blank" },
       ],
     }}
-    handlers={{ handleContact: () => goto("/contactus") }}
+    handlers={{ handleContact: () => goto("#contact") }}
   />
   <div class="spacer" aria-hidden="true"></div>
   <slot />
