@@ -6,7 +6,7 @@ interface ISingleNavOption {
   name: string;
   href: string;
   target?: string;
-  isSubOptions: boolean;
+  // isSubOptions: boolean;
 }
 
 export interface INavbarHandlers {
