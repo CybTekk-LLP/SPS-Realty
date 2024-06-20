@@ -194,6 +194,12 @@
           l10n={{ label: "Message", placeholder: "Write a message" }}
           bind:value={message}
         />
+        <br />
+        <Button
+          args={{ variant: "primary" }}
+          l10n={{ buttonLabel: "Send Message" }}
+          handlers={{ click: () => null }}
+        />
       </form>
       <img src="/images/Home/GridImage.png" alt="" />
     </div>

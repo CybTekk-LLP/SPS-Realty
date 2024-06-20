@@ -7,7 +7,7 @@
   <Navbar
     content={{
       navOptions: [
-        { name: "Home", href: "/home", target: "_blank" },
+        { name: "Home", href: "/", target: "_blank" },
         {
           name: "Projects",
           href: "/projects",
