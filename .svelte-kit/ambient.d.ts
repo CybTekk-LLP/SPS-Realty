@@ -111,6 +111,7 @@ declare module '$env/static/private' {
 	export const QT_AUTO_SCREEN_SCALE_FACTOR: string;
 	export const JOURNAL_STREAM: string;
 	export const XCURSOR_THEME: string;
+	export const XDG_DATA_DIRS: string;
 	export const GDK_BACKEND: string;
 	export const KDE_FULL_SESSION: string;
 	export const CAPACITOR_ANDROID_STUDIO_PATH: string;
@@ -245,6 +246,7 @@ declare module '$env/dynamic/private' {
 		QT_AUTO_SCREEN_SCALE_FACTOR: string;
 		JOURNAL_STREAM: string;
 		XCURSOR_THEME: string;
+		XDG_DATA_DIRS: string;
 		GDK_BACKEND: string;
 		KDE_FULL_SESSION: string;
 		CAPACITOR_ANDROID_STUDIO_PATH: string;
