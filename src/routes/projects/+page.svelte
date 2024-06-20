@@ -23,7 +23,7 @@
           title: projectContent[i].title ?? "Project Name",
           type: projectContent[i].type ?? " Project Type",
         }}
-        args={{ click: () => goto(`/project/${projectContent[i].id}`) }}
+        args={{ click: () => goto(`/projects/${projectContent[i].id}`) }}
       />
     {/each}
   </div>
@@ -34,9 +34,9 @@
     max-inline-size: 1280px;
     margin-inline: auto;
     padding-inline: 10px;
-    margin-block-start: 6vh;
+    margin-block: 10vh;
+
     & > .project {
-      margin-block-start: 16px;
       inline-size: 100%;
       display: grid;
       justify-items: center;
