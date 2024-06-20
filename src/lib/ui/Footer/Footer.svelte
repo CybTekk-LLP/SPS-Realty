@@ -5,6 +5,7 @@
     IFooterHandlers,
   } from "./../../types";
   import { Typography, Button } from "..";
+  import Input from "../Input/Input.svelte";
 
   export let l10n: IFooterL10n;
   export let content: IFooterContent;
@@ -17,7 +18,24 @@
     <div class="spacer" aria-hidden="true"></div>
     <Typography type="subtext">{l10n.subscribeLabel}</Typography>
     <div class="spacer" aria-hidden="true"></div>
-    <input type="email" />
+    <Input
+      args={{
+        variant: "text",
+      }}
+      l10n={{
+        label: "Email Address",
+        placeholder: "l.sehotra@cybtekk.com",
+        errorLabel: "invalid email",
+      }}
+      handlers={{
+        // @ts-ignore
+        validate: (value) => {
+          return value.match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          );
+        },
+      }}
+    />
     <div class="spacer" aria-hidden="true"></div>
     <div class="btn">
       <Button
