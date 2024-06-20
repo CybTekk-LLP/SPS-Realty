@@ -124,6 +124,9 @@
       grid-template-columns: auto;
       gap: 50px;
     }
+    @media screen and (width <= 768px) {
+      padding-inline: 30px;
+    }
     & > .icons {
       & > .btn {
         inline-size: 200px;

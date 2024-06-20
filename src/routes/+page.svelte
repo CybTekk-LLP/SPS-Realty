@@ -237,6 +237,10 @@
       }
     }
     & > .about {
+      &#about {
+        padding-top: 100px;
+        margin-top: -100px;
+      }
       & > .container {
         max-width: 1280px;
         inline-size: 90vw;
@@ -313,6 +317,10 @@
       margin-block-end: 5rem;
       background-color: var(--primary-700);
       padding-block: 64px;
+      &#contact {
+        padding-top: 100px;
+        margin-top: -100px;
+      }
       & > .container {
         max-inline-size: 1280px;
         inline-size: 90vw;

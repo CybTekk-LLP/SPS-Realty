@@ -82,6 +82,9 @@
     padding-block: 20px;
     gap: 50px;
     z-index: 3;
+    @media screen and (width <= 768px) {
+      padding-inline: 30px;
+    }
     @media screen and (width <= 1130px) {
       display: flex;
       justify-content: space-between;
