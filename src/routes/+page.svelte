@@ -2,4 +2,4 @@
   import { ModelConfigurator } from "$lib/project";
 </script>
 
-<ModelConfigurator></ModelConfigurator>
+<ModelConfigurator src="/models/scene.gltf"></ModelConfigurator>
