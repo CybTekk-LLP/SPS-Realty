@@ -1,76 +1,75 @@
 <script lang="ts">
-    import { goto } from "$app/navigation";
-    import { Navbar, Footer } from "$lib/ui";
-  </script>
-  
-  <main>
-    <Navbar
-      content={{
-        navOptions: [
-          { name: "Home", href: "/home", target: "_blank" },
-          {
-            name: "Projects",
-            href: "/projects",
-            target: "_blank",
-          },
-          {
-            name: "Investors",
-            href: "/investors",
-            target: "_blank",
-          },
-          { name: "About us", href: "/about", target: "_blank" },
-          { name: "Careers", href: "/careers", target: "_blank" },
-        ],
-      }}
-      handlers={{ handleContact: () => goto("/contactus") }}
-    />
-    <div class="spacer" aria-hidden="true"></div>
-    <slot />
-  </main>
-  <Footer
-    l10n={{
-      subscribeLabel: "Subscribe to our newsletter",
-      buttonLabel: "SUBSCRIBE",
-      policiesHeading: "Policies",
-    }}
+  import { goto } from "$app/navigation";
+  import { Navbar, Footer } from "$lib/ui";
+</script>
+
+<main>
+  <Navbar
     content={{
-      footerOptions: [
+      navOptions: [
+        { name: "Home", href: "/home", target: "_blank" },
         {
-          heading: "Head Office",
-          subHeading: "SP Singla Construction Pvt. Ltd.",
-          address: "#47, Sector-9, Panchkula-134113, Haryana, India.",
-          phoneNumbers: ["0172-2570440", "2563209", "2571595", "0172-4620941"],
-          fax: "0172-4620941",
-          email: "spscpkl@gmail.com",
-          siteLink: "www.spsinghla.com",
+          name: "Projects",
+          href: "/projects",
+          target: "_blank",
         },
         {
-          heading: "Site Office",
-          subHeading: "SP Singla Construction Pvt. Ltd.",
-          address:
-            "#1006-1007, Pearls Best Height - 1, A-5, Netaji Subhash Place, Pitampura, Delhi-110034",
-          phoneNumbers: ["0172-2570440", "2563209", "2571595", "0172-4620941"],
-          fax: "011- 27357408",
-          email: "delhioffice@spsinghla.com",
-          siteLink: "www.spsinghla.com",
+          name: "Investors",
+          href: "/investors",
+          target: "_blank",
         },
-      ],
-      policies: [
-        { href: "/", name: "Code of conduct" },
-        { href: "/", name: "Risk Management Policy" },
-        { href: "/", name: "Vigil Mechanism Policy" },
-        { href: "/", name: "P.O.S.H Policy" },
+        { name: "About us", href: "/about", target: "_blank" },
+        { name: "Careers", href: "/careers", target: "_blank" },
       ],
     }}
-    handlers={{ handleSubscribe: () => null }}
+    handlers={{ handleContact: () => goto("/contactus") }}
   />
-  
-  <style lang="scss">
-    main {
-      padding-block-start: 10vh;
-      & > .spacer {
-        margin-block: 100px;
-      }
+  <div class="spacer" aria-hidden="true"></div>
+  <slot />
+</main>
+<Footer
+  l10n={{
+    subscribeLabel: "Subscribe to our newsletter",
+    buttonLabel: "SUBSCRIBE",
+    policiesHeading: "Policies",
+  }}
+  content={{
+    footerOptions: [
+      {
+        heading: "Head Office",
+        subHeading: "SP Singla Construction Pvt. Ltd.",
+        address: "#47, Sector-9, Panchkula-134113, Haryana, India.",
+        phoneNumbers: ["0172-2570440", "2563209", "2571595", "0172-4620941"],
+        fax: "0172-4620941",
+        email: "spscpkl@gmail.com",
+        siteLink: "www.spsinghla.com",
+      },
+      {
+        heading: "Site Office",
+        subHeading: "SP Singla Construction Pvt. Ltd.",
+        address:
+          "#1006-1007, Pearls Best Height - 1, A-5, Netaji Subhash Place, Pitampura, Delhi-110034",
+        phoneNumbers: ["0172-2570440", "2563209", "2571595", "0172-4620941"],
+        fax: "011- 27357408",
+        email: "delhioffice@spsinghla.com",
+        siteLink: "www.spsinghla.com",
+      },
+    ],
+    policies: [
+      { href: "/", name: "Code of conduct" },
+      { href: "/", name: "Risk Management Policy" },
+      { href: "/", name: "Vigil Mechanism Policy" },
+      { href: "/", name: "P.O.S.H Policy" },
+    ],
+  }}
+  handlers={{ handleSubscribe: () => null }}
+/>
+
+<style lang="scss">
+  main {
+    padding-block-start: 10vh;
+    & > .spacer {
+      margin-block: 100px;
     }
-  </style>
-  
+  }
+</style>
