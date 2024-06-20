@@ -13,7 +13,9 @@
   </p>
   {#if args.variant === "default"}
     <p>
-      <Typography type="largeBodyText">{l10n.subHeading}</Typography>
+      <Typography type="largeBodyText" _color="var(--secondary-900)"
+        >{l10n.subHeading}</Typography
+      >
     </p>
   {/if}
   <ul class:list-style={args.variant === "default"}>
