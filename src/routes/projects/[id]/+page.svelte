@@ -16,7 +16,15 @@
     <br />
     <br />
     <br />
-    <Carousel {src} />
+    <Carousel
+      src={[
+        "/images/Home/GalleryImageOne.png",
+        "/images/Home/GalleryImageTwo.png",
+        "/images/Home/GalleryImageThree.png",
+        "/images/Home/GalleryImageFour.png",
+        "/images/Home/GalleryImageFive.png",
+      ]}
+    />
 
     <div class="btn">
       <Button
@@ -73,7 +81,7 @@
   }
   .article {
     background-color: var(--primary-700);
-    padding-inline: 8vw;
+    padding-inline: 6vw;
     padding-block: 3rem;
   }
 </style>
