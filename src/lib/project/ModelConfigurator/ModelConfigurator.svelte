@@ -3,7 +3,6 @@
   import { createEventDispatcher } from "svelte";
 
   export let src = "";
-  export let texture: string | undefined = undefined;
 
   let jsFiles = [
     "https://aframe.io/releases/1.3.0/aframe.min.js",
@@ -33,7 +32,7 @@
 
           document.head.appendChild(scriptElement);
         });
-      })
+      }),
     );
   };
 
@@ -49,7 +48,7 @@
     try {
       jsFiles.forEach((script) => {
         const existingScript = document?.querySelector(
-          `script[src="${script}"]`
+          `script[src="${script}"]`,
         );
         if (existingScript) {
           existingScript.remove();
@@ -59,8 +58,6 @@
       console.error("Error removing script:", error);
     }
   });
-
-  $: texture;
 </script>
 
 {#if scriptsLoaded}
@@ -68,17 +65,15 @@
     vr-mode-ui="enabled: false"
     embedded
     loading-screen="dotsColor: #557ffe; backgroundColor: #212121"
+    renderer="physicallyCorrectLights: true;"
   >
     <a-assets>
       <img
         id="sky"
         crossorigin="anonymous"
-        src="https://raw.githubusercontent.com/CybTekk-LLP/stoneTekk-models/main/sky.png"
+        src="/models/sky.jpg"
         alt=""
       />
-      {#if texture}
-        <img id="modelTexture" crossorigin="anonymous" src={texture} alt="" />
-      {/if}
     </a-assets>
 
     <a-entity
@@ -97,28 +92,19 @@
       mouse-cursor=""
     >
     </a-entity>
-
+    <a-light type="ambient" color="#ddd"></a-light>
+    <a-light color="#ddd" position="-1 1 0"></a-light>
     <a-sky src="#sky"></a-sky>
     <a-entity position="0 0 0" id="target"></a-entity>
 
-    <a-entity
-      id="model"
-      dynamic-model-loader
-      {src}
-      {texture}
-      rotation="0 60 0"
-      scale="1 1 1"
-      position="0 0 0"
-      geometry="primitive: box; width: 5; height: 0.4; depth: 5"
-      material={`src: url(${texture || "#modelTexture"}); color: #fff; roughness: 1; metalness: 0`}
-    ></a-entity>
+    <a-entity id="model" gltf-model={`url(${src})`} scale="0.3 0.3 0.3" rotation="0 -60 0" position="0 -1 0"></a-entity>
   </a-scene>
 {/if}
 
 <style lang="scss">
   a-scene {
     inline-size: 100%;
-    block-size: 400px;
+    block-size: 600px;
   }
   :global(.a-modal) {
     display: none;

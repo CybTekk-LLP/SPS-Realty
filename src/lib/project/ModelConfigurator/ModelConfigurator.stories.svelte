@@ -2,9 +2,7 @@
   import { Story, Template } from "@storybook/addon-svelte-csf";
   import ModelConfigurator from "./ModelConfigurator.svelte";
 
-  let src = "/models/model.gltf";
-  let texture =
-    "/models/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWN.webp";
+  let src = "/models/scene.gltf";
   export const meta = {
     title: "Components/Project/ModelConfigurator",
     component: ModelConfigurator,
@@ -12,7 +10,7 @@
 </script>
 
 <Template let:args>
-  <ModelConfigurator {...args} bind:texture></ModelConfigurator>
+  <ModelConfigurator {...args} bind:src></ModelConfigurator>
 </Template>
 
 <Story name="Model" args={{}} />
