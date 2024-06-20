@@ -27,11 +27,13 @@
     />
 
     <div class="btn">
-      <Button
-        args={{ variant: "primary" }}
-        l10n={{ buttonLabel: "Download Brochure" }}
-        handlers={{ click: () => alert("asd") }}
-      />
+      <a href="/images/Pdf/Brochure.pdf" download target="_blank">
+        <Button
+          args={{ variant: "primary" }}
+          l10n={{ buttonLabel: "Download Brochure" }}
+          handlers={{ click: () => null }}
+        />
+      </a>
       <Button
         args={{ variant: "secondary " }}
         l10n={{ buttonLabel: "View in 3D" }}
@@ -66,6 +68,9 @@
     padding-inline: 8vw;
     padding-block: 3rem;
     & > .btn {
+      & > a {
+        text-decoration: none;
+      }
       margin-block-start: 3rem;
       display: grid;
       gap: 16px;
