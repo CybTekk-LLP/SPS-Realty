@@ -13,6 +13,9 @@
 <main>
   <div class="header">
     <img src="/images/Models/Helios.svg" alt="Helios Project" height="100px" />
+    <br />
+    <br />
+    <br />
     <Carousel {src} />
 
     <div class="btn">
@@ -43,6 +46,7 @@
       }}
     />
   </div>
+  <br />
 </main>
 
 <style lang="scss">
@@ -59,6 +63,12 @@
       gap: 16px;
       justify-content: center;
       grid-template-columns: repeat(auto-fit, minmax(248px, 248px));
+      :global(.secondary) {
+        background-color: var(--secondary-900);
+      }
+      :global(.button-text) {
+        color: var(--primary-900);
+      }
     }
   }
   .article {
