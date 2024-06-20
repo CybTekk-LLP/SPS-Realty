@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
   import { ProjectCard } from "$lib/project";
   let projectContent = [
     {
@@ -22,7 +23,7 @@
           title: projectContent[i].title ?? "Project Name",
           type: projectContent[i].type ?? " Project Type",
         }}
-        args={{ click: () => alert("works") }}
+        args={{ click: () => goto(`/project/${projectContent[i].id}`) }}
       />
     {/each}
   </div>
@@ -33,6 +34,7 @@
     max-inline-size: 1280px;
     margin-inline: auto;
     padding-inline: 10px;
+    margin-block-start: 6vh;
     & > .project {
       margin-block-start: 16px;
       inline-size: 100%;
