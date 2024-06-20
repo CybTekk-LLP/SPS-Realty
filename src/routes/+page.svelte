@@ -1,6 +1,5 @@
 <script lang="ts">
-  // import { browser } from "$app/environment";
-  // import { VideoPlayer } from "$lib/project";
+  import { VideoPlayer } from "$lib/project";
   import { TextCard, Carousel } from "$lib/project";
   import { Typography, Button, Input } from "$lib/ui";
 
@@ -34,12 +33,10 @@
         />
       </div>
       <br />
-      <!-- {#if browser}
-        <VideoPlayer
-          poster="/images/Home/Poster.png"
-          source={["/images/Home/Helios.mp4"]}
-        />
-      {/if} -->
+      <VideoPlayer
+        poster="/images/Home/GalleryImageOne.png"
+        source={["/images/Home/Helios.mp4"]}
+      />
     </div>
   </section>
   <section class="about">
@@ -221,7 +218,11 @@
           margin-inline: auto;
         }
         & > .btn {
-          inline-size: 238px;
+          display: flex;
+          justify-content: center;
+          :global(.button) {
+            inline-size: 238px;
+          }
         }
       }
     }

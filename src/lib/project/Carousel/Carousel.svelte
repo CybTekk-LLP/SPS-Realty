@@ -19,8 +19,8 @@
 <style lang="scss">
   img {
     inline-size: 100%;
-    block-size: 500px;
-    object-fit: cover;
+    block-size: 100%;
+    object-fit: contain;
     image-rendering: optimizeSpeed;
   }
 </style>
