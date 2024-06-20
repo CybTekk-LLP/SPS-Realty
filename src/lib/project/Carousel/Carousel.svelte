@@ -20,7 +20,7 @@
   img {
     inline-size: 100%;
     block-size: 100%;
-    min-block-size: 500px;
+    min-block-size: 300px;
     aspect-ratio: 16/9;
     object-fit: cover;
     image-rendering: optimizeSpeed;
