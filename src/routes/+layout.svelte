@@ -42,7 +42,7 @@
         phoneNumbers: ["0172-2570440", "2563209", "2571595", "0172-4620941"],
         fax: "0172-4620941",
         email: "spscpkl@gmail.com",
-        siteLink: "www.spsinghla.com",
+        siteLink: "www.spsingla.com",
       },
       {
         heading: "Site Office",
@@ -51,8 +51,8 @@
           "#1006-1007, Pearls Best Height - 1, A-5, Netaji Subhash Place, Pitampura, Delhi-110034",
         phoneNumbers: ["0172-2570440", "2563209", "2571595", "0172-4620941"],
         fax: "011- 27357408",
-        email: "delhioffice@spsinghla.com",
-        siteLink: "www.spsinghla.com",
+        email: "delhioffice@spsingla.com",
+        siteLink: "www.spsingla.com",
       },
     ],
     policies: [
