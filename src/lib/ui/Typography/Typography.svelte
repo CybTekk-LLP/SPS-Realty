@@ -28,7 +28,6 @@
     word-break: break-word;
     leading-trim: both;
     color: var(--primary-900);
-
     &.block {
       display: block;
     }
