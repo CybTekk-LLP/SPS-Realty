@@ -17,7 +17,7 @@
         },
 
         { name: "About us", href: "/#about", target: "" },
-        { name: "Careers", href: "", target: "" },
+        { name: "Careers", href: "/careers", target: "" },
       ],
     }}
     handlers={{ handleContact: () => goto("/#contact") }}
