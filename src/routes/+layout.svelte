@@ -13,16 +13,12 @@
           href: "/projects",
           target: "",
         },
-        {
-          name: "Investors",
-          href: "",
-          target: "",
-        },
-        { name: "About us", href: "#about", target: "" },
+
+        { name: "About us", href: "/#about", target: "" },
         { name: "Careers", href: "", target: "" },
       ],
     }}
-    handlers={{ handleContact: () => goto("#contact") }}
+    handlers={{ handleContact: () => goto("/#contact") }}
   />
   <div class="spacer" aria-hidden="true"></div>
   <slot />

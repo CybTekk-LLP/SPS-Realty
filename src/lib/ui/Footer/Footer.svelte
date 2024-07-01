@@ -27,7 +27,7 @@
         }}
         l10n={{
           label: l10n.subscribeLabel,
-          placeholder: "l.sehotra@cybtekk.com",
+          placeholder: "youremail@gmail.com",
           errorLabel: "invalid email",
         }}
         handlers={{
@@ -76,7 +76,7 @@
       <div class="spacer" aria-hidden="true"></div>
       <div class="site-link flex">
         <img src="/images/Footer/Fax.svg" alt="Fax" />
-        <a href={option.fax}>
+        <a href={`tel:${option.fax}`}>
           <Typography type="smallBodyText">{option.fax}</Typography>
         </a>
       </div>
@@ -90,7 +90,7 @@
       <div class="spacer" aria-hidden="true"></div>
       <div class="site-link flex">
         <img src="/images/Footer/SiteLink.svg" alt="Sitelink" />
-        <a href={option.siteLink}>
+        <a href="/">
           <Typography type="smallBodyText">{option.siteLink}</Typography>
         </a>
       </div>
