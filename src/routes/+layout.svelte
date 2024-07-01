@@ -54,10 +54,10 @@
       },
     ],
     policies: [
-      { href: "/", name: "Code of conduct" },
-      { href: "/", name: "Risk Management Policy" },
-      { href: "/", name: "Vigil Mechanism Policy" },
-      { href: "/", name: "P.O.S.H Policy" },
+      { href: "/policy?query=conduct", name: "Code of conduct" },
+      { href: "/policy?query=risk", name: "Risk Management Policy" },
+      { href: "/policy?query=vigil", name: "Vigil Mechanism Policy" },
+      { href: "/policy?query=posh", name: "P.O.S.H Policy" },
     ],
   }}
   handlers={{ handleSubscribe: () => (label = "Subscribed!") }}
