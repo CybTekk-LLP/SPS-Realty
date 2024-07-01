@@ -1,6 +1,8 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
   import { Navbar, Footer } from "$lib/ui";
+
+  let label = "Subscribe";
 </script>
 
 <main>
@@ -26,7 +28,7 @@
 <Footer
   l10n={{
     subscribeLabel: "Subscribe to our newsletter",
-    buttonLabel: "SUBSCRIBE",
+    buttonLabel: label,
     policiesHeading: "Policies",
   }}
   content={{
@@ -58,7 +60,7 @@
       { href: "/", name: "P.O.S.H Policy" },
     ],
   }}
-  handlers={{ handleSubscribe: () => null }}
+  handlers={{ handleSubscribe: () => (label = "Subscribed!") }}
 />
 
 <style lang="scss">

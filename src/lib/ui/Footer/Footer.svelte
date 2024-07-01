@@ -34,7 +34,7 @@
           // @ts-ignore
           validate: (value) => {
             return value.match(
-              /^(([^<>()[\]\\.,;:\s@"]+(\.[^<div>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+              /^(([^<>()[\]\\.,;:\s@"]+(\.[^<div>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
             );
           },
         }}
@@ -44,8 +44,8 @@
     <div class="btn">
       <Button
         args={{ variant: "primary" }}
-        l10n={{ buttonLabel: "subscribe" }}
-        handlers={{ click: () => handlers.handleSubscribe }}
+        l10n={{ buttonLabel: l10n.buttonLabel }}
+        handlers={{ click: handlers.handleSubscribe }}
       />
     </div>
     <br />
