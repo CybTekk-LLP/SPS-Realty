@@ -8,6 +8,18 @@
   let email: string;
   let phone: number;
   let message: string;
+
+  const mailTo = (
+    name: string,
+    email: string,
+    phone: number,
+    message: string,
+  ) => {
+    let anchor = document.createElement("a");
+    anchor.href = `mailto:spscpkl@gmail.com?subject=Hey, this is ${name} and I wanted to know more about SPS&body=Hi,I found this website and wanted to share this message: ${message}. I am adding my phone number ${phone} and email ${email} here and hope to get responded soon.`;
+    anchor.click();
+    anchor.remove()
+  };
 </script>
 
 <main>
@@ -197,7 +209,7 @@
         <Button
           args={{ variant: "primary" }}
           l10n={{ buttonLabel: "Send Message" }}
-          handlers={{ click: () => null }}
+          handlers={{ click: () => mailTo(name, email, phone, message) }}
         />
       </form>
       <img src="/images/Home/GridImage.png" alt="" />

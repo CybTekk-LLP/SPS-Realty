@@ -1,6 +1,8 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
   import { Navbar, Footer } from "$lib/ui";
+
+  let label = "Subscribe";
 </script>
 
 <main>
@@ -13,16 +15,12 @@
           href: "/projects",
           target: "",
         },
-        {
-          name: "Investors",
-          href: "",
-          target: "",
-        },
-        { name: "About us", href: "#about", target: "" },
-        { name: "Careers", href: "", target: "" },
+
+        { name: "About us", href: "/#about", target: "" },
+        { name: "Careers", href: "/careers", target: "" },
       ],
     }}
-    handlers={{ handleContact: () => goto("#contact") }}
+    handlers={{ handleContact: () => goto("/#contact") }}
   />
   <div class="spacer" aria-hidden="true"></div>
   <slot />
@@ -30,7 +28,7 @@
 <Footer
   l10n={{
     subscribeLabel: "Subscribe to our newsletter",
-    buttonLabel: "SUBSCRIBE",
+    buttonLabel: label,
     policiesHeading: "Policies",
   }}
   content={{
@@ -56,13 +54,13 @@
       },
     ],
     policies: [
-      { href: "/", name: "Code of conduct" },
-      { href: "/", name: "Risk Management Policy" },
-      { href: "/", name: "Vigil Mechanism Policy" },
-      { href: "/", name: "P.O.S.H Policy" },
+      { href: "/policy?query=conduct", name: "Code of conduct" },
+      { href: "/policy?query=risk", name: "Risk Management Policy" },
+      { href: "/policy?query=vigil", name: "Vigil Mechanism Policy" },
+      { href: "/policy?query=posh", name: "P.O.S.H Policy" },
     ],
   }}
-  handlers={{ handleSubscribe: () => null }}
+  handlers={{ handleSubscribe: () => (label = "Subscribed!") }}
 />
 
 <style lang="scss">

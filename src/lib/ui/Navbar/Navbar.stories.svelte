@@ -31,11 +31,7 @@
             { name: "Upcoming Projects", href: "/upcoming", target: "_blank" },
           ],
         },
-        {
-          name: "Investors",
-          href: "/investors",
-          target: "_blank",
-        },
+        
         { name: "About us", href: "/about", target: "_blank" },
         { name: "Careers", href: "/careers", target: "_blank" },
       ],
