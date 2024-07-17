@@ -89,8 +89,7 @@
           args={{ variant: "default" }}
           l10n={{
             heading: "Our Vision",
-            subHeading:
-              "Trusted by over 5 million users all across 10 countries",
+            subHeading: "",
             content: [
               "We desire to empower dreams and build legacies! The main vision at SPS Realty is to be an unmeasurable leader in the field of real estate. We aim to be recognized for transforming lives through exceptional service, best solutions, and a refined commitment to extremely sustainable and thriving communities. For us property is not just a space to live, but a space that transcends bricks and mortar bringing up dreams, and memories and also enhancing value.",
               "Our main vision is to ensure every client with not just a property, but a place to call home! We believe in setting an impression on the landscape we serve. We focus not only on building structures but also on setting a benchmark in the world of real estate!",
@@ -117,8 +116,7 @@
             >Awards Won</Typography
           >
           <br />
-          <Typography type="heading" _color="var(--secondary-900)"
-            >25</Typography
+          <Typography type="heading" _color="var(--secondary-900)">4</Typography
           >
         </div>
         <div class="project-card">
@@ -126,8 +124,7 @@
             >Ongoint Projects</Typography
           >
           <br />
-          <Typography type="heading" _color="var(--secondary-900)"
-            >12</Typography
+          <Typography type="heading" _color="var(--secondary-900)">1</Typography
           >
         </div>
       </div>
@@ -136,7 +133,7 @@
           >Started in <Typography
             type="heading"
             _color="var(--tertiary-900)"
-            renderInline={true}>1996</Typography
+            renderInline={true}>2023</Typography
           ></Typography
         >
       </div>
