@@ -14,9 +14,6 @@ const config = {
     adapter: staticAdapter({
       fallback: "index.html",
     }),
-    paths: {
-      base: '',
-    },
     prerender: {
       handleHttpError: "warn",
     },
