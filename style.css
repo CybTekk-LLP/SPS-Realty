@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+:root {
+  --body-font: "Inter Tight", sans-serif;
+
+  --primary-900: #ffffff;
+  --primary-700: #f7f7f7;
+  --primary-500: #d6d6d6;
+  --secondary-900: #000000;
+  --secondary-700: #222222;
+  --secondary-500: #656565;
+
+  --tertiary-900: #e31e24;
+  --placeholder: #a6a6a6;
+  --card: #dddddd;
+  --transparent: transparent;
+}
