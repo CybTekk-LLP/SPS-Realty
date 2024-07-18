@@ -12,11 +12,10 @@ const config = {
   ],
   kit: {
     adapter: staticAdapter({
-      // Set fallback to '200.html' if using SPA mode, or 'index.html' otherwise
       fallback: "index.html",
     }),
     paths: {
-      base: '/SPS-Realty', // Adjust this to your repo name
+      base: '',
     },
     prerender: {
       handleHttpError: "warn",
