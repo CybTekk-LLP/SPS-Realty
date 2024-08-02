@@ -18,9 +18,11 @@ body {
   --primary-900: #ffffff;
   --primary-700: #f7f7f7;
   --primary-500: #d6d6d6;
+
   --secondary-900: #000000;
   --secondary-700: #222222;
   --secondary-500: #656565;
+  --secondary-300: #a8a8a8;
 
   --tertiary-900: #e31e24;
   --placeholder: #a6a6a6;

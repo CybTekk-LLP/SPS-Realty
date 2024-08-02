@@ -31,7 +31,7 @@
   </ul>
   <div class="btn">
     <Button
-      args={{ variant: "secondary" }}
+      args={{ variant: "primary" }}
       l10n={{ buttonLabel: "Contact Us" }}
       handlers={{ click: handlers.handleContact }}
     />
@@ -108,6 +108,7 @@
       :global(.button) {
         inline-size: 162px;
         block-size: 40px;
+        border-radius: 50px;
       }
       @media screen and (width <= 1130px) {
         display: none;

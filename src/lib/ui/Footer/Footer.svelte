@@ -5,7 +5,6 @@
     IFooterHandlers,
   } from "./../../types";
   import { Typography, Button } from "..";
-  import Input from "../Input/Input.svelte";
 
   export let l10n: IFooterL10n;
   export let content: IFooterContent;
@@ -13,154 +12,184 @@
 </script>
 
 <footer>
-  <div class="icons">
-    <img src="/images/Logo/LogoWhite.svg" alt="logo" />
-    <div class="spacer" aria-hidden="true"></div>
-    <Typography type="body" _color="var(--primary-900)"
-      >{l10n.subscribeLabel}</Typography
-    >
-    <div class="spacer" aria-hidden="true"></div>
-    <div class="input">
-      <Input
-        args={{
-          variant: "text",
-        }}
-        l10n={{
-          label: l10n.subscribeLabel,
-          placeholder: "youremail@gmail.com",
-          errorLabel: "invalid email",
-        }}
-        handlers={{
-          // @ts-ignore
-          validate: (value) => {
-            return value.match(
-              /^(([^<>()[\]\\.,;:\s@"]+(\.[^<div>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-            );
-          },
-        }}
-      />
+  <div class="sections">
+    <div class="icons">
+      <img src="/images/Logo/LogoWhite.svg" alt="logo" />
+      <div class="spacer" aria-hidden="true"></div>
+      <br />
+      <Typography type="body" _color="var(--secondary-300)">Socials</Typography>
+      <br />
+      <div class="socials">
+        <img src="/images/Footer/Facebook.svg" alt="facebook" />
+        <img src="/images/Footer/Instagram.svg" alt="Instgram" />
+        <img src="/images/Footer/Twitter.svg" alt="Twitter" />
+      </div>
     </div>
-    <div class="spacer" aria-hidden="true"></div>
-    <div class="btn">
-      <Button
-        args={{ variant: "primary" }}
-        l10n={{ buttonLabel: l10n.buttonLabel }}
-        handlers={{ click: handlers.handleSubscribe }}
-      />
-    </div>
-    <br />
-    <div class="socials">
-      <img src="/images/Footer/Facebook.svg" alt="facebook" />
-      <img src="/images/Footer/Instagram.svg" alt="Instgram" />
-      <img src="/images/Footer/Twitter.svg" alt="Twitter" />
+    {#each content.footerOptions as option}
+      <div class="offices">
+        <Typography type="largeBodyText">{option.heading}</Typography>
+        <br />
+        <Typography type="smallBodyText" _color="var(--secondary-300)"
+          >{option.subHeading}</Typography
+        >
+        <div class="spacer" aria-hidden="true"></div>
+        <Typography type="smallBodyText" _color="var(--secondary-300)"
+          >{option.address}</Typography
+        >
+        <div class="spacer" aria-hidden="true"></div>
+        <div class="phones flex">
+          <img src="/images/Footer/Phone.svg" alt="phone" />
+          {#each option.phoneNumbers as number}
+            <div class="numbers">
+              <a href={`tel:${number}`}>
+                <Typography type="smallBodyText" _color="var(--secondary-300)"
+                  >{number}</Typography
+                >
+              </a>
+            </div>
+          {/each}
+        </div>
+        <div class="spacer" aria-hidden="true"></div>
+        <div class="site-link flex">
+          <img src="/images/Footer/Fax.svg" alt="Fax" />
+          <a href={`tel:${option.fax}`}>
+            <Typography type="smallBodyText" _color="var(--secondary-300)"
+              >{option.fax}</Typography
+            >
+          </a>
+        </div>
+        <div class="spacer" aria-hidden="true"></div>
+        <div class="email flex">
+          <img src="/images/Footer/Email.svg" alt="Email" />
+          <a href={`mailto: ${option.email}`}>
+            <Typography type="smallBodyText" _color="var(--secondary-300)"
+              >{option.email}</Typography
+            >
+          </a>
+        </div>
+        <div class="spacer" aria-hidden="true"></div>
+        <div class="site-link flex">
+          <img src="/images/Footer/SiteLink.svg" alt="Sitelink" />
+          <a href="/">
+            <Typography type="smallBodyText" _color="var(--secondary-300)"
+              >{option.siteLink}</Typography
+            >
+          </a>
+        </div>
+      </div>
+    {/each}
+    <div class="policies">
+      <Typography type="largeBodyText">{l10n.policiesHeading}</Typography>
+      <br />
+      <ul>
+        {#each content.policies as policy}
+          <li>
+            <a href={policy.href}
+              ><Typography type="smallBodyText" _color="var(--secondary-300)"
+                >{policy.name}</Typography
+              ></a
+            >
+          </li>
+          <div class="spacer" aria-hidden="true"></div>
+        {/each}
+      </ul>
     </div>
   </div>
-  {#each content.footerOptions as option}
-    <div class="offices">
-      <Typography type="largeBodyText">{option.heading}</Typography>
-      <br />
-      <Typography type="body">{option.subHeading}</Typography>
-      <div class="spacer" aria-hidden="true"></div>
-      <Typography type="smallBodyText">{option.address}</Typography>
-      <div class="spacer" aria-hidden="true"></div>
-      <div class="phones flex">
-        <img src="/images/Footer/Phone.svg" alt="phone" />
-        {#each option.phoneNumbers as number}
-          <div class="numbers">
-            <a href={`tel:${number}`}>
-              <Typography type="smallBodyText">{number}</Typography>
-            </a>
-          </div>
-        {/each}
-      </div>
-      <div class="spacer" aria-hidden="true"></div>
-      <div class="site-link flex">
-        <img src="/images/Footer/Fax.svg" alt="Fax" />
-        <a href={`tel:${option.fax}`}>
-          <Typography type="smallBodyText">{option.fax}</Typography>
-        </a>
-      </div>
-      <div class="spacer" aria-hidden="true"></div>
-      <div class="email flex">
-        <img src="/images/Footer/Email.svg" alt="Email" />
-        <a href={`mailto: ${option.email}`}>
-          <Typography type="smallBodyText">{option.email}</Typography>
-        </a>
-      </div>
-      <div class="spacer" aria-hidden="true"></div>
-      <div class="site-link flex">
-        <img src="/images/Footer/SiteLink.svg" alt="Sitelink" />
-        <a href="/">
-          <Typography type="smallBodyText">{option.siteLink}</Typography>
-        </a>
-      </div>
-    </div>
-  {/each}
-  <div class="policies">
-    <Typography type="largeBodyText">{l10n.policiesHeading}</Typography>
-    <br />
+  <div class="bottom-line">
     <ul>
-      {#each content.policies as policy}
-        <li>
-          <a href={policy.href}
-            ><Typography type="smallBodyText">{policy.name}</Typography></a
-          >
-        </li>
-        <div class="spacer" aria-hidden="true"></div>
-      {/each}
+      <li>
+        <a href="/policy"
+          ><Typography type="smallBodyText" _color="var(--secondary-300)"
+            >Privacy Policy</Typography
+          ></a
+        >
+      </li>
+      <li>
+        <a href="/terms"
+          ><Typography type="smallBodyText" _color="var(--secondary-300)"
+            >Terms and Conditions</Typography
+          ></a
+        >
+      </li>
+      <li class="copyright">
+        <Typography type="smallBodyText" _color="var(--secondary-300)"
+          >Copyright 2024 All rights reseved. created by
+        </Typography><img src="/images/Logo/Cybtekk.svg" alt="" />
+      </li>
     </ul>
   </div>
 </footer>
 
 <style lang="scss">
   footer {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    background-color: var(--secondary-700);
-    gap: 20px;
-    padding-inline: 64px;
+    background-color: #140001;
     padding-block: 40px;
-    @media screen and (width <= 768px) {
-      grid-template-columns: auto;
-      gap: 50px;
-    }
-    @media screen and (width <= 768px) {
-      padding-inline: 30px;
-    }
-    & > .icons {
-      & > .btn {
-        inline-size: 200px;
-        :global(.button) {
-          block-size: 40px;
+    & > .sections {
+      padding-inline: 64px;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 20px;
+      margin-block-end: 40px;
+      @media screen and (width <= 768px) {
+        grid-template-columns: auto;
+        gap: 50px;
+      }
+      @media screen and (width <= 768px) {
+        padding-inline: 30px;
+      }
+
+      & > .icons {
+        & > .btn {
+          inline-size: 200px;
+          :global(.button) {
+            block-size: 40px;
+          }
+        }
+        & > .socials {
+          display: flex;
+          gap: 20px;
+        }
+        & > .input {
+          inline-size: 200px;
+          :global(label) {
+            display: none;
+          }
         }
       }
-      & > .socials {
-        display: flex;
-        gap: 20px;
+      & > .offices {
+        & > .phones {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 5px;
+        }
+        & > .flex {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
       }
-      & > .input {
-        inline-size: 200px;
-        :global(label) {
-          display: none;
+      & > .policies {
+        & > ul {
+          list-style: none;
         }
       }
     }
-    & > .offices {
-      & > .phones {
+    & > .bottom-line {
+      & > ul {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 5px;
-      }
-      & > .flex {
-        display: flex;
+        justify-content: center;
         align-items: center;
         gap: 10px;
-      }
-    }
-    & > .policies {
-      & > ul {
         list-style: none;
+        @media screen and (width <= 520px) {
+          flex-direction: column;
+        }
+        & > .copyright {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
       }
     }
   }

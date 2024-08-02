@@ -22,7 +22,7 @@
   };
 </script>
 
-<main>
+<main id="home">
   <section class="section-one">
     <div class="container">
       <h1>
@@ -222,7 +222,8 @@
     & > .section-one {
       text-align: center;
       background-color: var(--primary-700);
-      padding-block: 64px;
+      padding-block-start: 8rem;
+      padding-block-end: 64px;
       margin-block-end: 5rem;
       & > .container {
         max-inline-size: 1280px;

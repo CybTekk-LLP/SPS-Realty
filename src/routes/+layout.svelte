@@ -17,6 +17,9 @@
         },
 
         { name: "About Us", href: "/#about", target: "" },
+        { name: "Our Ethos", href: "/ourethos", target: "" },
+        { name: "Why Choose Us", href: "/whychooseus", target: "" },
+        { name: "CSR", href: "/csr", target: "" },
         { name: "Careers", href: "/careers", target: "" },
       ],
     }}
@@ -69,5 +72,8 @@
     & > .spacer {
       margin-block: 100px;
     }
+  }
+  main:has(#home) {
+    padding-block-start: 0;
   }
 </style>
