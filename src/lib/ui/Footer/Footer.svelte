@@ -98,14 +98,14 @@
   <div class="bottom-line">
     <ul>
       <li>
-        <a href="/policy"
+        <a href="/policy?query=policy"
           ><Typography type="smallBodyText" _color="var(--secondary-300)"
             >Privacy Policy</Typography
           ></a
         >
       </li>
       <li>
-        <a href="/terms"
+        <a href="/policy?query=terms"
           ><Typography type="smallBodyText" _color="var(--secondary-300)"
             >Terms and Conditions</Typography
           ></a
