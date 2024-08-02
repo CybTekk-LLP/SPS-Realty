@@ -19,6 +19,18 @@
         <h4>3. Prohibited Activities</h4>
         <p>You agree not to violate any laws or regulations, use the Site for any unauthorized purpose, disrupt or interfere with the Site's security or performance, or copy, modify, or distribute any content from the Site without our permission.</p>
         <br/>
+        <h4>4. Submissions</h4>
+        <p>If you submit any content to the Site, you grant us a non-exclusive, royalty-free, worldwide license to use, reproduce, modify, and distribute such content.</p>
+        <br>
+        <h4>5. Prohibited Content</h4>
+        <p>You agree not to submit content that is illegal, offensive, or infringes on the rights of others.</p>
+        <br/>
+        <h4>6. Disclaimers</h4>
+        <p>The Site is provided on an "as-is" and "as-available" basis. We make no warranties, express or implied, about the Site's accuracy, reliability, or availability.</p>
+        <br/>
+        <h4>7. Limitation of Liability</h4>
+        <p>To the maximum extent permitted by law, we will not be liable for any indirect, incidental, or consequential damages arising out of your use of the Site.</p>
+        <br/>
         <p>Thank you for your cooperation and commitment to maintaining a safe and respectful work environment.</p>`;
       break;
     case "policy":
