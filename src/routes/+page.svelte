@@ -13,12 +13,12 @@
     name: string,
     email: string,
     phone: number,
-    message: string,
+    message: string
   ) => {
     let anchor = document.createElement("a");
     anchor.href = `mailto:spscpkl@gmail.com?subject=Hey, this is ${name} and I wanted to know more about SPS&body=Hi,I found this website and wanted to share this message: ${message}. I am adding my phone number ${phone} and email ${email} here and hope to get responded soon.`;
     anchor.click();
-    anchor.remove()
+    anchor.remove();
   };
 </script>
 
@@ -27,7 +27,7 @@
     <div class="container">
       <h1>
         <Typography type="heading" _color="var(--secondary-900)"
-          >A Real Estate Company for a purpose!</Typography
+          >A Real Estate Company For a Purpose!</Typography
         >
       </h1>
       <br />
@@ -42,7 +42,7 @@
       <div class="btn">
         <Button
           args={{ variant: "primary" }}
-          l10n={{ buttonLabel: "Contact us" }}
+          l10n={{ buttonLabel: "Contact Us" }}
           handlers={{ click: () => goto("#contact") }}
         />
       </div>
@@ -116,11 +116,10 @@
       <div class="achievements">
         <div class="project-card">
           <Typography type="body" _color="var(--secondary-700)"
-            >Projects Completed</Typography
+            >Ongoint Projects</Typography
           >
           <br />
-          <Typography type="heading" _color="var(--secondary-900)"
-            >15</Typography
+          <Typography type="heading" _color="var(--secondary-900)">2</Typography
           >
         </div>
         <div class="project-card">
@@ -133,10 +132,11 @@
         </div>
         <div class="project-card">
           <Typography type="body" _color="var(--secondary-700)"
-            >Ongoint Projects</Typography
+            >Total Area (in sqft)</Typography
           >
           <br />
-          <Typography type="heading" _color="var(--secondary-900)">1</Typography
+          <Typography type="heading" _color="var(--secondary-900)"
+            >4 lakh</Typography
           >
         </div>
       </div>

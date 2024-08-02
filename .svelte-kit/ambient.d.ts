@@ -27,8 +27,8 @@
  */
 declare module '$env/static/private' {
 	export const SHELL: string;
-	export const LSCOLORS: string;
 	export const npm_command: string;
+	export const LSCOLORS: string;
 	export const SESSION_MANAGER: string;
 	export const USER_ZDOTDIR: string;
 	export const npm_config_userconfig: string;
@@ -46,13 +46,13 @@ declare module '$env/static/private' {
 	export const DESKTOP_SESSION: string;
 	export const GTK_RC_FILES: string;
 	export const NO_AT_BRIDGE: string;
-	export const XCURSOR_SIZE: string;
 	export const npm_config_globalconfig: string;
+	export const XCURSOR_SIZE: string;
 	export const EDITOR: string;
 	export const XDG_SEAT: string;
 	export const PWD: string;
-	export const LOGNAME: string;
 	export const XDG_SESSION_DESKTOP: string;
+	export const LOGNAME: string;
 	export const XDG_SESSION_TYPE: string;
 	export const npm_config_init_module: string;
 	export const SYSTEMD_EXEC_PID: string;
@@ -111,8 +111,8 @@ declare module '$env/static/private' {
 	export const QT_AUTO_SCREEN_SCALE_FACTOR: string;
 	export const JOURNAL_STREAM: string;
 	export const XCURSOR_THEME: string;
-	export const KDE_FULL_SESSION: string;
 	export const GDK_BACKEND: string;
+	export const KDE_FULL_SESSION: string;
 	export const CAPACITOR_ANDROID_STUDIO_PATH: string;
 	export const npm_config_noproxy: string;
 	export const PATH: string;
@@ -121,13 +121,13 @@ declare module '$env/static/private' {
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const npm_config_global_prefix: string;
 	export const KDE_APPLICATIONS_AS_SCOPE: string;
-	export const MAIL: string;
 	export const NVM_BIN: string;
+	export const MAIL: string;
 	export const XKB_DEFAULT_OPTIONS: string;
 	export const npm_node_execpath: string;
 	export const OLDPWD: string;
 	export const TERM_PROGRAM: string;
-	export const NINJA_ENV: string;
+	export const NINJA_WELCOME_SHOWN: string;
 	export const NODE_ENV: string;
 }
 
@@ -161,8 +161,8 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		SHELL: string;
-		LSCOLORS: string;
 		npm_command: string;
+		LSCOLORS: string;
 		SESSION_MANAGER: string;
 		USER_ZDOTDIR: string;
 		npm_config_userconfig: string;
@@ -180,13 +180,13 @@ declare module '$env/dynamic/private' {
 		DESKTOP_SESSION: string;
 		GTK_RC_FILES: string;
 		NO_AT_BRIDGE: string;
-		XCURSOR_SIZE: string;
 		npm_config_globalconfig: string;
+		XCURSOR_SIZE: string;
 		EDITOR: string;
 		XDG_SEAT: string;
 		PWD: string;
-		LOGNAME: string;
 		XDG_SESSION_DESKTOP: string;
+		LOGNAME: string;
 		XDG_SESSION_TYPE: string;
 		npm_config_init_module: string;
 		SYSTEMD_EXEC_PID: string;
@@ -245,8 +245,8 @@ declare module '$env/dynamic/private' {
 		QT_AUTO_SCREEN_SCALE_FACTOR: string;
 		JOURNAL_STREAM: string;
 		XCURSOR_THEME: string;
-		KDE_FULL_SESSION: string;
 		GDK_BACKEND: string;
+		KDE_FULL_SESSION: string;
 		CAPACITOR_ANDROID_STUDIO_PATH: string;
 		npm_config_noproxy: string;
 		PATH: string;
@@ -255,13 +255,13 @@ declare module '$env/dynamic/private' {
 		DBUS_SESSION_BUS_ADDRESS: string;
 		npm_config_global_prefix: string;
 		KDE_APPLICATIONS_AS_SCOPE: string;
-		MAIL: string;
 		NVM_BIN: string;
+		MAIL: string;
 		XKB_DEFAULT_OPTIONS: string;
 		npm_node_execpath: string;
 		OLDPWD: string;
 		TERM_PROGRAM: string;
-		NINJA_ENV: string;
+		NINJA_WELCOME_SHOWN: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;

@@ -16,7 +16,7 @@
           target: "",
         },
 
-        { name: "About us", href: "/#about", target: "" },
+        { name: "About Us", href: "/#about", target: "" },
         { name: "Careers", href: "/careers", target: "" },
       ],
     }}

@@ -31,8 +31,8 @@
   </ul>
   <div class="btn">
     <Button
-      args={{ variant: "secondary " }}
-      l10n={{ buttonLabel: "Contact us" }}
+      args={{ variant: "secondary" }}
+      l10n={{ buttonLabel: "Contact Us" }}
       handlers={{ click: handlers.handleContact }}
     />
   </div>
