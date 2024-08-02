@@ -75,5 +75,8 @@
   }
   main:has(#home) {
     padding-block-start: 0;
+    & > .spacer {
+      margin-block: 90px;
+    }
   }
 </style>
