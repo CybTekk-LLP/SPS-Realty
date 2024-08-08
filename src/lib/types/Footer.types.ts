@@ -7,6 +7,7 @@ export interface IFooterL10n {
 export interface IFooterContent {
   footerOptions: IFooterOption[];
   policies: { href: string; name: string }[];
+  socialLinks: { facebook: string; instagram: string; twitter: string };
 }
 
 interface IFooterOption {

@@ -28,7 +28,7 @@
         "As stewards of the environment, we recognize the profound impact our actions have on the world around us. That's why sustainability lies at the heart of everything we do. From adopting eco-friendly construction practices to integrating green technologies into our designs, we are committed to minimizing our environmental footprint and contributing to a more sustainable future.",
     },
     {
-      title: "Collaoration",
+      title: "Collaboration",
       iconSrc: "images/Ethos/Collaboration.svg",
       description:
         "Collaboration is key to our success. We believe in the power of synergy, leveraging the diverse talents and perspectives of our team, clients, and partners to achieve shared goals. By fostering a culture of collaboration and open communication, we create an environment where creativity flourishes, ideas thrive, and innovation thrives.",

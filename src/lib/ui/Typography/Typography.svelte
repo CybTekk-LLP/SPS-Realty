@@ -32,6 +32,7 @@
       display: block;
     }
     &.heading {
+      text-transform: uppercase;
       font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
       font-weight: 700;
     }

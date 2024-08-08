@@ -16,7 +16,7 @@
           target: "",
         },
 
-        { name: "About Us", href: "/#about", target: "" },
+        { name: "About Us", href: "/aboutus", target: "" },
         { name: "Our Ethos", href: "/ourethos", target: "" },
         { name: "Why Choose Us", href: "/whychooseus", target: "" },
         { name: "CSR", href: "/csr", target: "" },
@@ -62,6 +62,7 @@
       { href: "/policy?query=vigil", name: "Vigil Mechanism Policy" },
       { href: "/policy?query=posh", name: "P.O.S.H Policy" },
     ],
+    socialLinks: { facebook: "/", instagram: "/", twitter: "/" },
   }}
   handlers={{ handleSubscribe: () => (label = "Subscribed!") }}
 />

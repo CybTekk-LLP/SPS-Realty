@@ -4,7 +4,7 @@
     IFooterContent,
     IFooterHandlers,
   } from "./../../types";
-  import { Typography, Button } from "..";
+  import { Typography } from "..";
 
   export let l10n: IFooterL10n;
   export let content: IFooterContent;
@@ -20,9 +20,15 @@
       <Typography type="body" _color="var(--secondary-300)">Socials</Typography>
       <br />
       <div class="socials">
-        <img src="/images/Footer/Facebook.svg" alt="facebook" />
-        <img src="/images/Footer/Instagram.svg" alt="Instgram" />
-        <img src="/images/Footer/Twitter.svg" alt="Twitter" />
+        <a href={content.socialLinks.facebook}>
+          <img src="/images/Footer/Facebook.svg" alt="facebook" />
+        </a>
+        <a href={content.socialLinks.instagram}>
+          <img src="/images/Footer/Instagram.svg" alt="Instgram" />
+        </a>
+        <a href={content.socialLinks.twitter}>
+          <img src="/images/Footer/Twitter.svg" alt="Twitter" />
+        </a>
       </div>
     </div>
     {#each content.footerOptions as option}
@@ -114,7 +120,9 @@
       <li class="copyright">
         <Typography type="smallBodyText" _color="var(--secondary-300)"
           >Copyright 2024 All rights reseved. created by
-        </Typography><img src="/images/Logo/Cybtekk.svg" alt="" />
+        </Typography><a href="https://cybtekk.com/"
+          ><img src="/images/Logo/Cybtekk.svg" alt="" />
+        </a>
       </li>
     </ul>
   </div>
@@ -189,6 +197,10 @@
           display: flex;
           align-items: center;
           gap: 5px;
+          & > a {
+            text-decoration: none;
+            margin-top: 4px;
+          }
         }
       }
     }
