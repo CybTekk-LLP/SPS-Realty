@@ -15,7 +15,6 @@
           href: "/projects",
           target: "",
         },
-
         { name: "About Us", href: "/aboutus", target: "" },
         { name: "Our Ethos", href: "/ourethos", target: "" },
         { name: "Why Choose Us", href: "/whychooseus", target: "" },
