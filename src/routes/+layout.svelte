@@ -42,7 +42,7 @@
         phoneNumbers: ["7546000099, 7564000099"],
         fax: "0172-4620941",
         email: "info@spsrealty.in",
-        siteLink: "www.spsingla.com",
+        siteLink: "www.spsrealty.in",
       },
       {
         heading: "Site Office",
@@ -52,7 +52,7 @@
         phoneNumbers: ["7546000099, 7564000099"],
         fax: "011- 27357408",
         email: "info@spsrealty.in",
-        siteLink: "www.spsingla.com",
+        siteLink: "www.spsrealty.in",
       },
     ],
     policies: [
