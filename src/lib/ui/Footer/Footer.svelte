@@ -74,14 +74,14 @@
           </a>
         </div>
         <div class="spacer" aria-hidden="true"></div>
-        <div class="site-link flex">
+        <!-- <div class="site-link flex">
           <img src="/images/Footer/SiteLink.svg" alt="Sitelink" />
           <a href="/">
             <Typography type="smallBodyText" _color="var(--secondary-300)"
               >{option.siteLink}</Typography
             >
           </a>
-        </div>
+        </div> -->
       </div>
     {/each}
     <div class="policies">
