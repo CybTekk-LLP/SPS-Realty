@@ -38,20 +38,20 @@
       {
         heading: "Head Office",
         subHeading: "SP Singla Construction Pvt. Ltd.",
-        address: "#47, Sector-9, Panchkula-134113, Haryana, India.",
-        phoneNumbers: ["0172-2570440", "2563209", "2571595", "0172-4620941"],
+        address: "SCO No 413 , 2nd Floor Sector - 8 Panchkula Haryana- 134109",
+        phoneNumbers: ["7546000099, 7564000099"],
         fax: "0172-4620941",
-        email: "spscpkl@gmail.com",
+        email: "info@spsrealty.in",
         siteLink: "www.spsingla.com",
       },
       {
         heading: "Site Office",
         subHeading: "SP Singla Construction Pvt. Ltd.",
         address:
-          "#1006-1007, Pearls Best Height - 1, A-5, Netaji Subhash Place, Pitampura, Delhi-110034",
-        phoneNumbers: ["0172-2570440", "2563209", "2571595", "0172-4620941"],
+          "SPS Helios Near Penta Homes VIP Road Zirakpur Mohali Punjab-140603",
+        phoneNumbers: ["7546000099, 7564000099"],
         fax: "011- 27357408",
-        email: "delhioffice@spsingla.com",
+        email: "info@spsrealty.in",
         siteLink: "www.spsingla.com",
       },
     ],
@@ -61,7 +61,12 @@
       { href: "/policy?query=vigil", name: "Vigil Mechanism Policy" },
       { href: "/policy?query=posh", name: "P.O.S.H Policy" },
     ],
-    socialLinks: { facebook: "/", instagram: "/", twitter: "/" },
+    socialLinks: {
+      facebook:
+        "https://www.facebook.com/people/SPS-Realty-Helios/61559663403861/",
+      instagram: "https://www.instagram.com/spsrealtyindia/",
+      twitter: "/",
+    },
   }}
   handlers={{ handleSubscribe: () => (label = "Subscribed!") }}
 />
