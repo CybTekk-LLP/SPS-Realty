@@ -44,16 +44,16 @@
         email: "info@spsrealty.in",
         siteLink: "",
       },
-      {
-        heading: "Site Office",
-        subHeading: "SPS Realty",
-        address:
-          "SPS Helios Near Penta Homes VIP Road Zirakpur Mohali Punjab-140603",
-        phoneNumbers: ["7546000099, 7564000099"],
-        fax: "011- 27357408",
-        email: "info@spsrealty.in",
-        siteLink: "",
-      },
+      // {
+      //   heading: "Site Office",
+      //   subHeading: "SPS Realty",
+      //   address:
+      //     "SPS Helios Near Penta Homes VIP Road Zirakpur Mohali Punjab-140603",
+      //   phoneNumbers: ["7546000099, 7564000099"],
+      //   fax: "011- 27357408",
+      //   email: "info@spsrealty.in",
+      //   siteLink: "",
+      // },
     ],
     policies: [
       { href: "/policy?query=conduct", name: "Code of conduct" },
