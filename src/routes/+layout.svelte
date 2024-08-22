@@ -17,7 +17,7 @@
         },
         { name: "About Us", href: "/aboutus", target: "" },
         { name: "Our Ethos", href: "/ourethos", target: "" },
-        { name: "Why Choose Us", href: "/whychooseus", target: "" },
+        { name: "Why SPS Realty", href: "/whychooseus", target: "" },
         { name: "CSR", href: "/csr", target: "" },
         { name: "Careers", href: "/careers", target: "" },
       ],
@@ -37,8 +37,8 @@
     footerOptions: [
       {
         heading: "Head Office",
-        subHeading: "SP Singla Construction Pvt. Ltd.",
-        address: "SCO No 413 , 2nd Floor Sector - 8 Panchkula Haryana- 134109",
+        subHeading: "SPS Realty",
+        address: "SCO No 413 , Sector - 8 Panchkula Haryana- 134109",
         phoneNumbers: ["7546000099, 7564000099"],
         fax: "0172-4620941",
         email: "info@spsrealty.in",
@@ -46,7 +46,7 @@
       },
       {
         heading: "Site Office",
-        subHeading: "SP Singla Construction Pvt. Ltd.",
+        subHeading: "SPS Realty",
         address:
           "SPS Helios Near Penta Homes VIP Road Zirakpur Mohali Punjab-140603",
         phoneNumbers: ["7546000099, 7564000099"],

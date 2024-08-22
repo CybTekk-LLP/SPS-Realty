@@ -26,7 +26,7 @@
         <TextCard
           args={{ variant: "listCard" }}
           l10n={{
-            heading: "Why Choose SPS Realty:",
+            heading: "Why SPS Realty:",
             content: [
               "We are here to set up a benchmark in the world of Real Estate!",
               "Meet Our Team who aim to be a Real Estate Advisor with a knack for meeting every client’s need, each time.",

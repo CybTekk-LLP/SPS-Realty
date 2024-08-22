@@ -45,7 +45,7 @@
 <main>
   <section class="headings-section">
     <Typography type="heading" _color="var(--secondary-900)"
-      >Why Choose US</Typography
+      >Why SPS Realty</Typography
     >
     <br />
     <br />

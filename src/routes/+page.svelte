@@ -93,7 +93,7 @@
         <br />
         <Input
           args={{ variant: "email" }}
-          l10n={{ label: "Email", placeholder: "" }}
+          l10n={{ label: "", placeholder: "" }}
           bind:value={email}
         />
         <br />

@@ -18,7 +18,7 @@
     message: string
   ) => {
     let anchor = document.createElement("a");
-    anchor.href = `mailto:spscpkl@gmail.com?subject=Hey, this is ${name} and I wanted to know more about careers at SPS&body=Hi,I found this careers website and wanted to share this message: ${message}. I want to apply for the ${role} role and expect a package of ${money} (in INR), and I have ${years} years of experience. I am adding my resume link ${resume} and email ${email} here and hope to get responded soon.`;
+    anchor.href = `mailto:info@spsrealty.in?subject=Hey, this is ${name} and I wanted to know more about careers at SPS&body=Hi,I found this careers website and wanted to share this message: ${message}. I want to apply for the ${role} role and expect a package of ${money} (in INR), and I have ${years} years of experience. I am adding my resume link ${resume} and email ${email} here and hope to get responded soon.`;
     anchor.click();
     anchor.remove();
   };
