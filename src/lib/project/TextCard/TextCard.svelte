@@ -35,6 +35,7 @@
     padding-inline: 40px;
     padding-block: 38px;
     border-radius: 16px;
+    text-align: justify;
     & > .heading {
       margin-block-end: 16px;
     }

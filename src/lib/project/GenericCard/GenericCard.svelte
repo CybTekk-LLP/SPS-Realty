@@ -23,6 +23,7 @@
     background-color: var(--primary-700);
     padding: 40px;
     border-radius: 10px;
+    text-align: justify;
     & > img {
       margin-block: 20px;
     }
