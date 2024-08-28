@@ -25,7 +25,7 @@
 </script>
 
 <form action="javascript:void(0)">
-  <h1>
+  <h1 style:text-align="center" style:text-transform="uppercase">
     <Typography type="subheading" _color="var(--secondary-900)"
       >Apply for a career at SPS!</Typography
     >
@@ -33,7 +33,7 @@
   <div class="spacer" aria-hidden="true"></div>
   <Input
     args={{ variant: "text" }}
-    l10n={{ label: "Name", placeholder: "Marvin McKinney" }}
+    l10n={{ label: "Name", placeholder: "" }}
     bind:value={name}
   />
   <div class="spacer" aria-hidden="true"></div>
@@ -44,7 +44,7 @@
     }}
     l10n={{
       label: "Email",
-      placeholder: "youremail@gmail.com",
+      placeholder: "",
       errorLabel: "invalid email",
     }}
     handlers={{
@@ -60,32 +60,32 @@
   <div class="spacer" aria-hidden="true"></div>
   <Input
     args={{ variant: "text" }}
-    l10n={{ label: "Link to resume", placeholder: "Google drive link" }}
+    l10n={{ label: "Link to resume", placeholder: "" }}
     bind:value={resume}
   />
   <div class="spacer" aria-hidden="true"></div>
   <Input
     args={{ variant: "text" }}
-    l10n={{ label: "Role", placeholder: "eg Marketing lead" }}
+    l10n={{ label: "Role", placeholder: "" }}
     bind:value={role}
   />
   <div class="spacer" aria-hidden="true"></div>
   <Input
     args={{ variant: "text" }}
-    l10n={{ label: "Years of experience", placeholder: "eg 3" }}
+    l10n={{ label: "Years of experience", placeholder: "" }}
     bind:value={years}
   />
   <div class="spacer" aria-hidden="true"></div>
   <Input
     args={{ variant: "text" }}
-    l10n={{ label: "Expected Package", placeholder: "eg 95 LPA" }}
+    l10n={{ label: "Expected Package", placeholder: "" }}
     bind:value={money}
   />
 
   <div class="spacer" aria-hidden="true"></div>
   <Input
     args={{ variant: "textarea" }}
-    l10n={{ label: "Custom Message", placeholder: "Write a message" }}
+    l10n={{ label: "Custom Message", placeholder: "" }}
     bind:value={message}
   />
 

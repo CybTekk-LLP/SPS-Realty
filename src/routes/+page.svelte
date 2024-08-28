@@ -77,13 +77,15 @@
   <section class="form" id="contact">
     <div class="container">
       <form>
-        <Typography type="heading" _color="var(--secondary-900)"
-          >Get in touch</Typography
-        >
-        <div class="spacer" aria-hidden="true"></div>
-        <Typography type="body" _color="var(--secondary-900)"
-          >Our Team would love to hear from you</Typography
-        >
+        <div class="form-header" style:text-align="center">
+          <Typography type="heading" _color="var(--secondary-900)"
+            >Get in touch</Typography
+          >
+          <div class="spacer" aria-hidden="true"></div>
+          <Typography type="body" _color="var(--secondary-900)"
+            >Our Team would love to hear from you</Typography
+          >
+        </div>
         <br />
         <Input
           args={{ variant: "text" }}
@@ -93,7 +95,7 @@
         <br />
         <Input
           args={{ variant: "email" }}
-          l10n={{ label: "", placeholder: "" }}
+          l10n={{ label: "email", placeholder: "" }}
           bind:value={email}
         />
         <br />

@@ -21,13 +21,17 @@
       <br />
       <div class="socials">
         <a href={content.socialLinks.facebook}>
-          <img src="/images/Footer/Facebook.svg" alt="facebook" />
+          <img height="35px" src="/images/Footer/Facebook.svg" alt="facebook" />
         </a>
         <a href={content.socialLinks.instagram}>
-          <img src="/images/Footer/Instagram.svg" alt="Instgram" />
+          <img
+            height="35px"
+            src="/images/Footer/Instagram.svg"
+            alt="Instgram"
+          />
         </a>
         <a href={content.socialLinks.twitter}>
-          <img src="/images/Footer/Twitter.svg" alt="Twitter" />
+          <img height="35px" src="/images/Footer/Twitter.svg" alt="Twitter" />
         </a>
       </div>
     </div>
@@ -156,6 +160,7 @@
         & > .socials {
           display: flex;
           gap: 20px;
+          translate: (-10px 0);
         }
         & > .input {
           inline-size: 200px;
