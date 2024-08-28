@@ -25,7 +25,7 @@
       title: "Employee Wellbeing:",
       iconSrc: "images/CSR/Employee.svg",
       description:
-        "Our employees are the heart and soul of [Company Name], and their health, safety, and wellbeing are our top priorities. We are committed to providing a safe and supportive work environment where every employee feels valued, respected, and empowered to succeed. From competitive benefits packages to ongoing training and development opportunities, we invest in our employees' growth and success.",
+        "Our employees are the heart and soul of SPS Realty, and their health, safety, and wellbeing are our top priorities. We are committed to providing a safe and supportive work environment where every employee feels valued, respected, and empowered to succeed. From competitive benefits packages to ongoing training and development opportunities, we invest in our employees' growth and success.",
     },
   ];
 </script>

@@ -37,7 +37,7 @@
       title: "Proven Track Record",
       iconSrc: "images/WhyChooseUs/Track.svg",
       description:
-        "Don't just take our word for it – our track record speaks for itself. Over the years, we have successfully completed countless projects of varying sizes and scopes, earning the trust and loyalty of clients across the region. When you choose [Company Name], you can have confidence knowing that you're working with a company with a proven track record of success.",
+        "Don't just take our word for it – our track record speaks for itself. Over the years, we have successfully completed countless projects of varying sizes and scopes, earning the trust and loyalty of clients across the region. When you choose SPS Realty, you can have confidence knowing that you're working with a company with a proven track record of success.",
     },
   ];
 </script>
