@@ -18,8 +18,8 @@
             heading: "Our Approach",
             subHeading: "A Real Estate Company for a purpose!",
             content: [
-              "We dream of coming up with innovation, strategically designed to enhance the thriving residential hub. We seek to match up the lifestyle of the entire area, becoming a centre for social and economic growth. Our aim always revolves around one entity that is our customers.",
-              "Ever since our parent company SP Singla Constructions was initiated, we have moved forward with every new step trying to meet their needs, ideas, and demands. The same mythology we aim to practise here.  We believe in more than just buying or selling the properties! Our main objective lies in creating homes and enhancing communities.",
+              "We dream of coming up with innovation, strategically designed to enhance the thriving residential hub. With approximately 30 years of experience in infrastructure and 900 projects delivered across India, we seek to match up the lifestyle of the entire area, becoming a center for social and economic growth. Currently, we have 40 ongoing projects, all aimed at driving progress and quality. Our focus always revolves around one entity: our customers.",
+              "Ever since our parent company, SP Singla Constructions, was initiated, we have moved forward with every new step, trying to meet the needs, ideas, and demands of our clients. With the same philosophy, we aim to practice it here. We believe in more than just buying or selling properties! Our main objective lies in creating homes and enhancing communities.",
             ],
           }}
         />
